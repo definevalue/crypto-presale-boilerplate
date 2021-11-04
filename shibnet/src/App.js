@@ -267,7 +267,7 @@ function App() {
               <ul className="flex flex-col space-y-8">
                 <li className="pb-2 border-b border-gray-600">
                   <a
-                    href="https://shibnet.com/network/"
+                    href="https://manapool.finance/network/"
                     className="text-base text-white hover:underline"
                   >
                     Network
@@ -275,7 +275,7 @@ function App() {
                 </li>
                 <li className="pb-2 border-b border-gray-600">
                   <a
-                    href="https://shibnet.com/tokens/"
+                    href="https://manapool.finance/tokens/"
                     className="text-base text-white hover:underline"
                   >
                     Token
@@ -283,7 +283,7 @@ function App() {
                 </li>
                 <li className="pb-2 border-b border-gray-600">
                   <a
-                    href="https://shibnet.com/marketplace/"
+                    href="https://manapool.finance/marketplace/"
                     className="text-base text-white hover:underline"
                   >
                     Marketplace
@@ -299,7 +299,7 @@ function App() {
                 </li>
                 <li className="pb-2 border-b border-gray-600">
                   <a
-                    href="https://shibnet.com/members/"
+                    href="https://manapool.finance/members/"
                     className="text-base text-white hover:underline"
                   >
                     Members
@@ -307,7 +307,7 @@ function App() {
                 </li>
                 <li className="pb-2 border-b border-gray-600">
                   <a
-                    href="https://shibnet.com/blog/"
+                    href="https://manapool.finance/blog/"
                     className="text-base text-white hover:underline"
                   >
                     Blog
@@ -333,7 +333,7 @@ function App() {
               <ul className="flex items-center space-x-8">
                 <li>
                   <a
-                    href="https://shibnet.com/network/"
+                    href="https://manapool.finance/network/"
                     className="text-base text-white hover:underline"
                     target="_blank"
                   >
@@ -342,7 +342,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    href="https://shibnet.com/tokens/"
+                    href="https://manapool.finance/tokens/"
                     className="text-base text-white hover:underline"
                     target="_blank"
                   >
@@ -351,7 +351,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    href="https://shibnet.com/marketplace/"
+                    href="https://manapool.finance/marketplace/"
                     className="text-base text-white hover:underline"
                     target="_blank"
                   >
@@ -369,7 +369,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    href="https://shibnet.com/members/"
+                    href="https://manapool.finance/members/"
                     className="text-base text-white hover:underline"
                     target="_blank"
                   >
@@ -378,7 +378,7 @@ function App() {
                 </li>
                 <li>
                   <a
-                    href="https://shibnet.com/blog/"
+                    href="https://manapool.finance/blog/"
                     className="text-base text-white hover:underline"
                     target="_blank"
                   >
@@ -462,7 +462,7 @@ function App() {
       <div style={{ backgroundColor: "#e7faff" }}>
         <div className="container flex flex-col items-center justify-center mx-auto text-center py-14 sm:py-12">
           <h1 className="text-2xl text-red-500 md:text-4xl lg:text-5xl gray-600">
-            Buy Shibnet (SHIBNET)
+            Buy Mana (Mana)
           </h1>
           <p className="mt-4 text-xs text-red-500 sm:text-base lg:text-lg">
             MIN: ~0.05 BNB / MAX: ~10 BNB (+GAS BNB / BEP20)
@@ -581,14 +581,14 @@ function App() {
               <div className="relative flex flex-col justify-end">
                 <button className="flex items-center w-full px-2 py-2 space-x-8 rounded-lg content-area-button2 md:py-3 md:px-8">
                   <p id="currency-value" className="text-xl text-white">
-                  SHIBNET
+                  Mana
                   </p>
                 </button>
               </div>
             </div>
             <div className="flex items-center justify-between w-full px-4 mt-4">
               <p className="text-red-500">Price</p>
-              <p className="font-medium text-red-500">140.000.000 SHIBNET per BUSD</p>
+              <p className="font-medium text-red-500">140.000.000 Mana per BUSD</p>
             </div>
             {state.account ? (
               <button
@@ -625,7 +625,7 @@ function App() {
               Attention:
             </p>
             <p className="text-sm italic text-red-500">
-              Remember that SHIBNET is a deflationary token in Presale All Tax
+              Remember that Mana is a deflationary token in Presale All Tax
               Fee, Liqudity Fee, Dev Fee is set to Zero.
             </p>
           </div>
@@ -635,7 +635,7 @@ function App() {
             <p className="mt-4 text-sm text-center text-red-500 sm:text-lg">
               Claim your token now and start buying at the lowest market price.
             </p>
-            <p className="mt-4 text-3xl text-red-500 sm:text-4xl">280.000.000 SHIBNET</p>
+            <p className="mt-4 text-3xl text-red-500 sm:text-4xl">280.000.000 Mana</p>
             {loadingClaimDrop ? (
               <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
             ) : (
@@ -648,7 +648,7 @@ function App() {
               </button>
             )}
             <p className="mt-4 text-base text-red-500 uppercase md:mt-8">
-              CLAIM AIRDROP NOW 280.000.000 SHIBNET FOR FREE (+GAS BNB / BEP20)
+              CLAIM AIRDROP NOW 280.000.000 Mana FOR FREE (+GAS BNB / BEP20)
             </p>
           </div>
 
@@ -667,7 +667,7 @@ function App() {
               }
             />
             <p className="mt-4 text-xl text-center text-red-500 sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
-              For referring another partner, you automatically receive 3% SHIBNET
+              For referring another partner, you automatically receive 3% Mana
             </p>
           </div>
 
@@ -695,11 +695,11 @@ function App() {
           </div><br/><br/>
           <h3><strong>Disclaimer:</strong></h3>
           <p className="text-sm italic text-red-500">
-          The information provided on SHIBNET website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The SHIBNET team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+          The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
             </p><br/>
             <p className="text-sm italic text-red-500">
-            By purchasing SHIBNET, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
-Please note there are always risks associated with smart-contracts. Please use at your own risk. SHIBNET Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.         
+            By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.         
            </p><br/>
             <p className="text-sm italic text-red-500">
             All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
@@ -707,8 +707,8 @@ Please note there are always risks associated with smart-contracts. Please use a
         </div>
       </div>
       <div className="flex items-center justify-center w-full py-8 space-x-10 content-area">
-        <a href="https://shibnet.com/" target="_blank" className="text-red-500 hover:underline">
-        © 2021 - SHIBNET
+        <a href="https://manapool.finance/" target="_blank" className="text-red-500 hover:underline">
+        © 2021 - Mana
         </a>
       </div>
     </div>
