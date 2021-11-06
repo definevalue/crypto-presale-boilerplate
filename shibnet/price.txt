@@ -1,2 +1,2 @@
 <p className="text-red-500">Price</p>
-              <p className="font-medium text-red-500">{BNBPrice} SHIBNET per BNB</p>
+              <p className="font-medium text-red-500">{BNBPrice} SHIBNET perper BNB</p>
