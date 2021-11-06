@@ -12,11 +12,11 @@ Konstantin Work
   z-index: 100;
   padding : 20px;
 }
-
+/* logo image */
 .logo{
   width: 700px;
 }
-
+/* social button */
 .social-btn{
   color : white;
 }
@@ -24,7 +24,14 @@ Konstantin Work
 .social-btn:hover {
   color : #a56dff;
 }
+/**navbar menu**/
+#menu{
+  width: auto;
+}
 
+.main_back{
+  background-color: #211034;
+}
 /**End**/
 
 .App {

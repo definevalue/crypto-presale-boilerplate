@@ -304,7 +304,7 @@ function App() {
                     id="menu"
                     className="absolute z-20 hidden w-6/12 px-4 py-8 bg-gray-900 shadow-2xl lg:hidden top-12 right-10 md:w-5/12"
                   >
-                    <ul className="flex flex-col space-y-8">
+                    <ul className="flex flex-col space-y-8 p-2">
                       <li className="pb-2 border-b border-gray-600">
                         <a
                           href="https://manapool.finance/network/"
@@ -478,7 +478,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col items-center px-4 md:px-6 lg:px-10 ">
+              {/* <div className="flex flex-col items-center px-4 md:px-6 lg:px-10 ">
                 <div className="flex flex-col justify-center  items-center mt-1 sm:mt-4 md:mt-12 lg:mt-20 ">
                   <h1 className="text-xl font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
                   #1 Real Social Network
@@ -496,7 +496,7 @@ function App() {
                   </a>
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
 
 
@@ -707,12 +707,14 @@ function App() {
         </div>
       </section>
       
-      <div style={{ backgroundColor: "#e7faff" }}>
+      <div className="main_back">
         <div className="container flex flex-col items-center justify-center mx-auto text-center py-14 sm:py-12">
-          <h1 className="text-2xl text-red-500 md:text-4xl lg:text-5xl gray-600">
+          <h1 className="text-2xl text-white md:text-4xl lg:text-5xl gray-600">
+            The World's
+            Real Social Network
             Buy Mana (Mana)
           </h1>
-          <p className="mt-4 text-xs text-red-500 sm:text-base lg:text-lg">
+          <p className="mt-4 text-xs text-white sm:text-base lg:text-lg">
             MIN: ~0.05 BNB / MAX: ~10 BNB (+GAS BNB / BEP20)
           </p>
           <div className="px-2">
