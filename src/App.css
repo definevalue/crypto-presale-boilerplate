@@ -17,6 +17,14 @@ Konstantin Work
   width: 700px;
 }
 
+.social-btn{
+  color : white;
+}
+
+.social-btn:hover {
+  color : #a56dff;
+}
+
 /**End**/
 
 .App {

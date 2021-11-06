@@ -19,6 +19,8 @@ import "./App.css";
 //bootstrap
 // import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 //image
 import logoImg from './asset/image/newlogo.png'
 
@@ -271,22 +273,234 @@ function App() {
             <div className="col-md-3 col-9 col-sm-3 text-left text-white-50 font-weight-bolder font-20">
                 <img src={logoImg} class="logo" />
             </div>
-            <div className="col-md-6 col-12">
-              <ul className="justify-content-center">
-
-              </ul>
+            <div className="col-md-6 col-12 justify-content-center align-items-center d-flex">
+              <div className="row">
+                <div className="col-3">
+                  <a class="social-btn" href="http://twitter.com" target="_blank">
+                    <i aria-hidden="true" className="fa fa-twitter" style={{ fontSize : "36px" }}></i>
+                  </a>
+                </div>
+                <div className="col-3">
+                  <a class="social-btn" href="http://www.reddit.com" target="_blank">
+                    <i aria-hidden="true" className="fa fa-reddit" style={{ fontSize : "36px" }}></i>
+                  </a>
+                </div>
+                <div className="col-3">
+                  <a class="social-btn" href="http://www.youtube.com" target="_blank">
+                    <i aria-hidden="true" className="fa fa-youtube" style={{ fontSize : "36px" }}></i>
+                  </a>
+                </div>
+                <div className="col-3">
+                  <a class="social-btn" href="http://t.me" target="_blank">
+                    <i aria-hidden="true" className="fa fa-telegram" style={{ fontSize : "36px" }}></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="col-md-3 col-12">
+              <div className="container relative z-10 mx-auto xl:px-20">
+                <div className="relative flex items-center justify-between p-4 bg-gray-50 bg-opacity-5">
+                  <div
+                    id="menu"
+                    className="absolute z-20 hidden w-6/12 px-4 py-8 bg-gray-900 shadow-2xl lg:hidden top-12 right-10 md:w-5/12"
+                  >
+                    <ul className="flex flex-col space-y-8">
+                      <li className="pb-2 border-b border-gray-600">
+                        <a
+                          href="https://manapool.finance/network/"
+                          className="text-base text-white hover:underline"
+                        >
+                          Network
+                        </a>
+                      </li>
+                      <li className="pb-2 border-b border-gray-600">
+                        <a
+                          href="https://manapool.finance/tokens/"
+                          className="text-base text-white hover:underline"
+                        >
+                        Token
+                        </a>
+                      </li>
+                      <li className="pb-2 border-b border-gray-600">
+                      <a
+                        href="https://manapool.finance/marketplace/"
+                        className="text-base text-white hover:underline"
+                      >
+                        Marketplace
+                      </a>
+                    </li>
+                    <li className="pb-2 border-b border-gray-600">
+                      <a
+                        href="javascript:void(0)"
+                        className="text-base text-white hover:underline"
+                      >
+                        Whitepaper
+                      </a>
+                    </li>
+                    <li className="pb-2 border-b border-gray-600">
+                      <a
+                        href="https://manapool.finance/members/"
+                        className="text-base text-white hover:underline"
+                      >
+                        Members
+                      </a>
+                    </li>
+                    <li className="pb-2 border-b border-gray-600">
+                      <a
+                        href="https://manapool.finance/blog/"
+                        className="text-base text-white hover:underline"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                  <div className="flex flex-col mt-8 space-y-8">
+                    <button className="px-3 py-1 text-white bg-transparent content-area-button2 rounded-full bnb-border">
+                      BNB
+                    </button>
+                    <button className="px-3 py-1 text-white bg-transparent rounded-full content-area-button button-md-bg">
+                      {state.account ? state.account?.slice(0, 5) + "..." + state.account?.slice(-5) : "Connect Wallet"}
+                    </button>
+                  </div>
+                </div>
+                <div className="w-1/4">
+                  <img
+                    src="https://pre.shibnet.com/pre-sale-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex justify-center hidden w-1/2 lg:block">
+                  <ul className="flex items-center space-x-8">
+                    <li>
+                      <a
+                        href="https://manapool.finance/network/"
+                        className="text-base text-white hover:underline"
+                        target="_blank"
+                      >
+                        Network
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://manapool.finance/tokens/"
+                        className="text-base text-white hover:underline"
+                        target="_blank"
+                      >
+                        Token
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://manapool.finance/marketplace/"
+                        className="text-base text-white hover:underline"
+                        target="_blank"
+                      >
+                        Marketpalce
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        className="text-base text-white hover:underline"
+                        target="_blank"
+                      >
+                        Whitepaper
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://manapool.finance/members/"
+                        className="text-base text-white hover:underline"
+                        target="_blank"
+                      >
+                        Members
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://manapool.finance/blog/"
+                        className="text-base text-white hover:underline"
+                        target="_blank"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex items-center justify-end hidden w-1/4 space-x-6 lg:block">
+                  <a
+                    href="javascript:void(0)"
+                    className="text-white hover:underline"
+                  >
+                    BNB
+                  </a>
+                  {state.account ? (
+                    <button
+                      className="px-6 py-2 text-white rounded-full hover:underline"
+                      style={{ backgroundColor: "#e21b63" }}
+                    // onClick={() => connectToMetaMask()}
+                    // onClick={()=>state.connectMetaMask}
+                    >
+                      {state.account.slice(0, 6) + "..." + state.account.slice(-4)}
+                    </button>
+                  ) : (
+                    <button
+                      className="px-6 py-2 text-white rounded-full content-area-button2"
+                      style={{ backgroundColor: "#e21b63" }}
+                      onClick={!state.account ? state.connectMetaMask : undefined}
+                    >
+                      Connect Wallet
+                    </button>
+                  )}
+                </div>
+                <div className="lg:hidden">
+                  <button
+                    onClick={toggleMenu}
+                    className="rounded focus:outline-none focus:ring-2 focus:ring-gray-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-menu-2"
+                      width="44"
+                      height="44"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="4" y1="6" x2="20" y2="6" />
+                      <line x1="4" y1="12" x2="20" y2="12" />
+                      <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="flex flex-col items-center px-4 md:px-6 lg:px-10 ">
+                <div className="flex flex-col justify-center  items-center mt-1 sm:mt-4 md:mt-12 lg:mt-20 ">
+                  <h1 className="text-xl font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                  #1 Real Social Network
+                  </h1>
+                  <h1 className="text-xl items-center font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                  Cryptocurrency
+                  </h1>
+                  <button className="w-11/12 px-8 py-2 mt-8 text-white  items-center rounded-full bg-button-image content-area-button sm:w-8/12 md:w-8/12 lg:w-6/12">
+                  <a
+                    href="https://t.me/shibnet"
+                    target="_blank"
+                    className="text-white"
+                  >
+                    Join Telegram
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
 
             </div>
-            {/* <div class="col-3 col-md-3 text-right mobile-only text-white-50">
-                <span class="fas fa-times" id="menu-icon" style="font-size: 20px" aria-hidden="true"></span>
-            </div>
-            <div class="col-md-6 col-12">
-            </div>
-            <div class="col-md-3 col-12 text-center">
-                <a href="#" class="btn secondary size-medium font-weight-normal" target="_blank">Download Now</a>
-            </div> */}
           </div>
             
 
