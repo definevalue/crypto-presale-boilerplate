@@ -41,6 +41,11 @@ Konstantin Work
 .navbar{
   background: radial-gradient(circle at top, #590a7e, #0e0516 45%);
 }
+
+.input-none{
+  background: none;
+}
+
 /**End**/
 
 .App {

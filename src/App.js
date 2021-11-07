@@ -659,9 +659,8 @@ function App() {
               Invite by
             </h2>
             <input
-              style={{ backgroundColor: "#e7faff" }}
               type="text"
-              className="w-11/12 px-4 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 focus:outline-none lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 sm:px-8 md:text-xl lg:text-2xl"
+              className="input-none text-white w-11/12 px-4 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 focus:outline-none lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 sm:px-8 md:text-xl lg:text-2xl"
               value={
                 window.location.search
                   ? window.location.search.split("?ref=")[1]
@@ -678,9 +677,8 @@ function App() {
               My referral link
             </h2>
             <input
-              style={{ backgroundColor: "#e7faff" }}
               type="text"
-              className="w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
+              className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
               value={state.account ? state.account : "Connect Your Wallet"}
             />
             <CopyToClipboard
