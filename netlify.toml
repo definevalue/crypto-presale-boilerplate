@@ -16,6 +16,6 @@
   #[dev]
   #  command = "yarn start" # Command to start your dev server
   #  port = 3000 # Port that the dev server will be listening on
-  #  publish = "dist" # Folder with the static content for _redirect file
+  #  publish = "dist" # Folder with the static content for _redirect file a
 
   ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
