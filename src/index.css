@@ -126,53 +126,26 @@ code {
 
 
 .modal-box{
-  border-width: 2px;
-  border-style: solid;
-  border-color: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-
-  border-image-source: linear-gradient(
-140deg
-, #e84444, #e84444);
-  border-image-slice: 1;
-
-
-  background-image: linear-gradient(#3840f7,#53d8ff),linear-gradient( 
-140deg
- , #e84444, #e84444);
-    /* border-image-slice: 1; */
-    border: double 5px transparent;
+    /* background: radial-gradient(circle at top, #590a7e, #0e0516 45%); */
+    /* border: double 5px transparent; */
     border-radius: 35px;
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-
-  
+    background-color: #353444;
+    /* background-origin: border-box; */
+    /* background-clip: padding-box, border-box; */
 }
 
 .modal-button1{
-  border-width: 6px;
-  border-style: solid;
-  border-color: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-
-  border-image-source: linear-gradient(
-140deg
-, #e84444, #e84444);
-  border-image-slice: 1;
-
-  background-image: linear-gradient(#e7faff,#e7faff),linear-gradient( 
-140deg
- , #e84444, #e84444);
-    /* border-image-slice: 1; */
-   
+    border: 2px solid #808080;
+    background-color: #353444;
     border-radius: 15px;
     background-origin: border-box;
     background-clip: padding-box, border-box; 
 }
+
+.modal-button1:hover{
+  background-color: #2b2936;
+}
+
 .border-4{
    border-radius: 15px;
     background-origin: border-box;

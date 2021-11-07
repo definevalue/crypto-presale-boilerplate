@@ -10,9 +10,14 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import ClipLoader from "react-spinners/ClipLoader";
 import { token } from './contract/environment'
 import "./App.css";
+
+//Wallet Image
+import metamask from './asset/image/metamask.png';
+import trustwallet from './asset/image/trustwallet.png';
+import safepal from './asset/image/safepal.png';
+
 const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 
-//bootstrap
 
 
 
@@ -210,46 +215,66 @@ function App() {
         id="newsletter"
         className="relative flex items-center justify-center w-full h-full modal"
       >
-        <div className="absolute z-30 flex flex-col items-center justify-center w-9/12 px-4 py-8 bg-gray-900 shadow-lg modalbox-height modal-box sm:w-7/12 md:w-8/12 lg:w-5/12 top-24 xl:px-10">
-          <h1 className="text-xl font-medium text-center text-white sm:text-2xl md:text-3xl">
-            Connect to a wallet
+        {/* Initial Modal Start */}
+        <div className="absolute z-30 flex flex-col items-center justify-center w-8/12 px-4 py-8 bg-gray-900 shadow-lg modalbox-height modal-box sm:w-6/12 md:w-5/12 lg:w-4/12 xl:w-3/12 top-24 xl:px-10">
+          <h1 className="text-xl font-medium text-center text-white sm:text-2xl md:text-3xl pt-16">
+            Import your wallet
           </h1>
           <div className="w-full mt-8 rounded-2xl md:mt-16">
             <button
               onClick={!state.account ? state.connectMetaMask : undefined}
               className="flex items-center justify-between w-full px-2 py-2 modal-button1 md:px-4 md:py-4"
             >
-              <p className="text-xl text-white sm:text-2xl md:text-3xl">
-                Metamask
-              </p>
-              <div>
-                <img src="https://pre.shibnet.com/img/meta.svg" alt="" />
+              <div className="grid grid-cols-2">
+                <div>
+                  <img src={metamask} alt="" style={{width : '30px'}}/>
+                </div>
+                <div>
+                  <p className="text-xl text-white sm:text-2xl md:text-3xl">
+                  Metamask
+                  </p>
+                </div>
               </div>
             </button>
           </div>
           <button
             onClick={!state.account ? state.connectMetaMask : undefined}
-            className="flex items-center justify-between w-full px-2 py-2 mt-4 border-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
+            className="modal-button1 flex items-center justify-between w-full px-2 py-2 mt-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
           >
-            <p className="text-xl text-gray-100 sm:text-2xl md:text-3xl">
-              Trust Wallet
-            </p>
+            <div className="grid grid-cols-2">
+                <div>
+                  <img src={trustwallet} style={{width : '30px'}}/>
+                </div>
+                <div>
+                  <p className="text-xl text-white sm:text-2xl md:text-3xl">
+                  Trust Wallet
+                  </p>
+                </div>
+              </div>
             <div>
-              <img src="https://pre.shibnet.com/img/trust.svg" alt="" />
             </div>
           </button>
           <button
             onClick={!state.account ? state.connectMetaMask : undefined}
-            className="flex items-center justify-between w-full px-2 py-2 mt-4 border-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
+            className="modal-button1 flex items-center justify-between w-full px-2 py-2 mt-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
           >
-            <p className="text-xl text-gray-100 sm:text-2xl md:text-3xl">
-              SafePal
-            </p>
+            <div className="grid grid-cols-2">
+              <div>
+                <img src={safepal} style={{width : '30px'}}/>
+              </div>
+              <div>
+                <p className="text-xl text-white sm:text-2xl md:text-3xl">
+                SafePal
+                </p>
+              </div>
+            </div>
+            
             <div>
-              <img src="https://pre.shibnet.com/img/safepal.svg" alt="" />
             </div>
           </button>
         </div>
+      {/* Initial Model End */}
+
       </div>
       <div className="relative pb-4 sm:pb-8 lg:pb-16 navbar">
         {/* <img
