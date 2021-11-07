@@ -220,7 +220,7 @@ function App() {
               onClick={!state.account ? state.connectMetaMask : undefined}
               className="flex items-center justify-between w-full px-2 py-2 modal-button1 md:px-4 md:py-4"
             >
-              <p className="text-xl text-red-500 sm:text-2xl md:text-3xl">
+              <p className="text-xl text-white sm:text-2xl md:text-3xl">
                 Metamask
               </p>
               <div>
@@ -461,12 +461,12 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "#e7faff" }}>
+      <div className="main_back">
         <div className="container flex flex-col items-center justify-center mx-auto text-center py-14 sm:py-12">
-          <h1 className="text-2xl text-red-500 md:text-4xl lg:text-5xl gray-600">
+          <h1 className="text-2xl text-white md:text-4xl lg:text-5xl gray-600">
             Buy Mana (Mana)
           </h1>
-          <p className="mt-4 text-xs text-red-500 sm:text-base lg:text-lg">
+          <p className="mt-4 text-xs text-white sm:text-base lg:text-lg">
             MIN: ~0.05 BNB / MAX: ~10 BNB (+GAS BNB / BEP20)
           </p>
           <div className="px-2">
@@ -482,14 +482,14 @@ function App() {
                   Attention:{" "}
                 </p>
               </div>
-              <p className="text-sm italic font-black text-red-500 md:text-base">
+              <p className="text-sm italic font-black text-white md:text-base">
                 ICO Price 140.000.000 BUSD, Pancakeswap Listing Price 70.000.000 BUSD
               </p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-11/12 p-4 mt-6 md:mt-12 lg:w-5/12 border-rounded-table rounded-3xl content-area md:p-6 shadow-css">
             <div className="flex items-center justify-between w-full">
-              <h2 className="text-xl font-bold text-red-500 md:text-2xl">Swap</h2>
+              <h2 className="text-xl font-bold text-white md:text-2xl">Swap</h2>
               <div>
                 <img src="https://pre.shibnet.com/img/setting.svg" alt="" />
               </div>
@@ -510,7 +510,7 @@ function App() {
                   type="text"
                   type="number"
                   placeholder="0"
-                  className="w-40 text-3xl text-red-500 bg-transparent focus:outline-none"
+                  className="w-40 text-3xl text-white bg-transparent focus:outline-none"
                   value={swapFrom}
                   //  type="number"
                   onChange={(e) => checkValue(e.target.value)}
@@ -577,7 +577,7 @@ function App() {
                   type="text"
                   value={swapTo}
                   style={{ width: 175 }}
-                  className="w-10 text-3xl text-red-500 bg-transparent focus:outline-none"
+                  className="w-10 text-3xl text-white bg-transparent focus:outline-none"
                 />
               </div>
               <div className="relative flex flex-col justify-end">
@@ -589,8 +589,8 @@ function App() {
               </div>
             </div>
             <div className="flex items-center justify-between w-full px-4 mt-4">
-              <p className="text-red-500">Price</p>
-              <p className="font-medium text-red-500">140.000.000 Mana per BUSD</p>
+              <p className="text-white">Price</p>
+              <p className="font-medium text-white">140.000.000 Mana per BUSD</p>
             </div>
             {state.account ? (
               <button
@@ -606,13 +606,13 @@ function App() {
             )}
           </div>
           <div className="flex justify-center mt-7 md:mt-14">
-            <p className="w-11/12 text-lg text-center text-red-500 md:w-7/12">
+            <p className="w-11/12 text-lg text-center text-white md:w-7/12">
               For every purchase that your referral makes, you will receive an
               additional 3% token to your wallet.
             </p>
           </div>
           <div className="mt-7 md:mt-14">
-            <p className="text-xs font-bold text-red-500 sm:text-xs lg:text-lg">
+            <p className="text-xs font-bold text-white sm:text-xs lg:text-lg">
               TOKEN ADDRESS: {token}
             </p>
           </div>
@@ -626,18 +626,18 @@ function App() {
             >
               Attention:
             </p>
-            <p className="text-sm italic text-red-500">
+            <p className="text-sm italic text-white">
               Remember that Mana is a deflationary token in Presale All Tax
               Fee, Liqudity Fee, Dev Fee is set to Zero.
             </p>
           </div>
 
           <div className="mx-4 md:mt-6 lg:mt-10">
-            <h2 className="text-center hpRDUw">CLAIM AIRDROP</h2>
-            <p className="mt-4 text-sm text-center text-red-500 sm:text-lg">
+            <h2 className="text-center hpRDUw text-white ">CLAIM AIRDROP</h2>
+            <p className="mt-4 text-sm text-center text-white sm:text-lg">
               Claim your token now and start buying at the lowest market price.
             </p>
-            <p className="mt-4 text-3xl text-red-500 sm:text-4xl">280.000.000 Mana</p>
+            <p className="mt-4 text-3xl text-white sm:text-4xl">280.000.000 Mana</p>
             {loadingClaimDrop ? (
               <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
             ) : (
@@ -649,13 +649,13 @@ function App() {
                 Claim Airdrop here
               </button>
             )}
-            <p className="mt-4 text-base text-red-500 uppercase md:mt-8">
+            <p className="mt-4 text-base text-white uppercase md:mt-8">
               CLAIM AIRDROP NOW 280.000.000 Mana FOR FREE (+GAS BNB / BEP20)
             </p>
           </div>
 
           <div className="flex flex-col items-center px-4 py-6 mt-8 border-t-2 border-b-2 border-white md:mt-14 lg:mt-24 md:px-10 md:py-10 lg:py-20 lg:w-8/12">
-            <h2 className="text-xl text-center text-red-500 sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
               Invite by
             </h2>
             <input
@@ -668,13 +668,13 @@ function App() {
                   : state.owner
               }
             />
-            <p className="mt-4 text-xl text-center text-red-500 sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
+            <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
               For referring another partner, you automatically receive 3% Mana
             </p>
           </div>
 
           <div className="flex flex-col items-center w-full px-4 mt-8 sm:mt-14 lg:mt-24 lg:w-8/12 md:px-10">
-            <h2 className="text-xl text-center text-red-500 sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
               My referral link
             </h2>
             <input
@@ -689,27 +689,27 @@ function App() {
             >
               <button
                 //   onClick={CopyLink}
-                className="px-8 py-2 mt-6 text-red-500 uppercase rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
+                className="px-8 py-2 mt-6 text-white uppercase rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
               >
                 Copy My referral Link
               </button>
             </CopyToClipboard>
           </div><br/><br/>
           <h3><strong>Disclaimer:</strong></h3>
-          <p className="text-sm italic text-red-500">
+          <p className="text-sm italic text-white">
           The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
             </p><br/>
-            <p className="text-sm italic text-red-500">
+            <p className="text-sm italic text-white">
             By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
 Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.         
            </p><br/>
-            <p className="text-sm italic text-red-500">
+            <p className="text-sm italic text-white">
             All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
             </p>
         </div>
       </div>
       <div className="flex items-center justify-center w-full py-8 space-x-10 content-area">
-        <a href="https://manapool.finance/" target="_blank" className="text-red-500 hover:underline">
+        <a href="https://manapool.finance/" target="_blank" className="text-white hover:underline">
         © 2021 - Mana
         </a>
       </div>
