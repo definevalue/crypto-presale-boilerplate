@@ -499,7 +499,7 @@ function App() {
             <h4 className="text-2xl text-white md:text-3xl lg:text-4xl gray-600">
               Buy Mana
             </h4>
-            <p className="mt-4 text-xs text-white sm:text-base lg:text-lg">
+            <p className="mt-4 text-xs text-white sm:text-base lg:text-lg text-center">
               MIN: ~0.05 BNB / MAX: ~5 BNB
               <br/>1 MANA = 1 BUSD
             </p>
