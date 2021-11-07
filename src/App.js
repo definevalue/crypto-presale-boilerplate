@@ -440,7 +440,7 @@ function App() {
           </div>
           <div className="flex flex-col items-center px-4 md:px-6 lg:px-10 ">
             <div className="flex flex-col justify-center  items-center mt-1 sm:mt-4 md:mt-12 lg:mt-20 ">
-              <h1 className="text-xl font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
+              <h1 className="text-2xl font-medium leading-normal text-white sm:text-3xl md:text-4xl lg:text-5xl">
               The World' Best Real Social Network
               </h1>
               <h1 className="text-xl items-center font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
@@ -462,149 +462,167 @@ function App() {
         </div>
       </div>
       <div className="main_back">
-        <div className="container flex flex-col items-center justify-center mx-auto text-center py-14 sm:py-12">
-          <h1 className="text-2xl text-white md:text-4xl lg:text-5xl gray-600">
-            Buy Mana (Mana)
-          </h1>
-          <p className="mt-4 text-xs text-white sm:text-base lg:text-lg">
-            MIN: ~0.05 BNB / MAX: ~10 BNB (+GAS BNB / BEP20)
-          </p>
-          <div className="px-2">
-            <div
-              style={{ backgroundColor: "#1e134b" }}
-              className="flex flex-col items-center px-4 py-2 mt-8 rounded-full sm:flex-row shadow-css1 md:py-2 sm:space-x-2"
-            >
-              <div className="flex items-center space-x-2">
-                <p
-                  className="text-base italic font-black lg:text-lg"
-                  style={{ color: "rgb(116, 63, 229)" }}
-                >
-                  Attention:{" "}
-                </p>
-              </div>
-              <p className="text-sm italic font-black text-white md:text-base">
-                ICO Price 140.000.000 BUSD, Pancakeswap Listing Price 70.000.000 BUSD
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-11/12 p-4 mt-6 md:mt-12 lg:w-5/12 border-rounded-table rounded-3xl content-area md:p-6 shadow-css">
-            <div className="flex items-center justify-between w-full">
-              <h2 className="text-xl font-bold text-white md:text-2xl">Swap</h2>
-              <div>
-                <img src="https://pre.shibnet.com/img/setting.svg" alt="" />
-              </div>
-            </div>
-            <div
-              style={{ backgroundColor: "#fff" }}
-              className="flex justify-between w-full px-2 pt-4 pb-2 mt-4 md:mt-6 md:pt-6 md:px-4 md:pb-4 rounded-2xl md:rounded-3xl shadow-css1 "
-            >
-              <div className="flex flex-col justify-start space-y-4 md:space-y-8">
-                <p
-                  style={{ color: "#392c6e" }}
-                  className="text-lg text-left text-gray-600"
-                >
-                  <strong>From</strong>
-                </p>
-                <input
-                  id="valid-amount"
-                  type="text"
-                  type="number"
-                  placeholder="0"
-                  className="w-40 text-3xl text-white bg-transparent focus:outline-none"
-                  value={swapFrom}
-                  //  type="number"
-                  onChange={(e) => checkValue(e.target.value)}
-                />
-              </div>
-              <div className="relative flex flex-col justify-end">
-                <button
-                  //   onClick={toggleList}
-                  className="flex items-center px-1 py-2 space-x-4 rounded-lg content-area-button2 md:py-3 md:px-2"
-                >
-                  <div>
-                    <img src="https://pre.shibnet.com/img/bnb.svg" alt="" />
-                  </div>
-                  <p
-                    id="currency-value"
-                    className="text-base text-white md:text-xl"
-                  >
-                    BNB
-                  </p>
-                  <div>
-                    <img
-                      src="https://pre.shibnet.com/img/down.svg"
-                      alt=""
-                    />
-                  </div>
-                </button>
+        {/* <div className="flex flex-col items-center justify-center mx-auto text-center py-14 sm:py-12"> */}
+        {/* Total Part */}
+        <div>
 
-                {/* <div
-                  id="curr-menu"
-                  className="absolute z-10 flex flex-col hidden w-11/12 pt-1 pb-1 bg-gray-900 rounded -bottom-28"
-                >
-                  <button
-                    onClick={setToOption1}
-                    className="px-2 pb-3 text-base text-left text-red-500 border-b border-gray-300 md:text-xl hover:bg-gray-800"
-                  >
-                    BUSD
-                  </button>
-                  
-                  <button
-                    onClick={setToOption2}
-                    className="px-2 pb-3 text-base text-left text-red-500 border-b border-gray-300 md:text-xl hover:bg-gray-800"
-                  >
-                    BNB
-                  </button>
-                </div> */}
-              </div>
-            </div>
-
-            <div className="mt-4 md:mt-8">
-              <img src="https://pre.shibnet.com/img/Arrow2.svg" alt="" />
-            </div>
-            <div
-              style={{ backgroundColor: "#fff" }}
-              className="flex justify-between w-full px-4 pt-6 pb-4 mt-4 bg-gray-900 shadow-2xl md:mt-8 rounded-3xl shadow-css1"
-            >
-              <div className="flex flex-col justify-start space-y-4 md:space-y-8">
-                <p
-                  style={{ color: "#392c6e" }}
-                  className="text-lg text-left text-gray-600"
-                >
-                  <strong>To</strong>
-                </p>
-                <input
-                  type="text"
-                  value={swapTo}
-                  style={{ width: 175 }}
-                  className="w-10 text-3xl text-white bg-transparent focus:outline-none"
-                />
-              </div>
-              <div className="relative flex flex-col justify-end">
-                <button className="flex items-center w-full px-2 py-2 space-x-8 rounded-lg content-area-button2 md:py-3 md:px-8">
-                  <p id="currency-value" className="text-xl text-white">
-                  Mana
-                  </p>
-                </button>
-              </div>
-            </div>
-            <div className="flex items-center justify-between w-full px-4 mt-4">
-              <p className="text-white">Price</p>
-              <p className="font-medium text-white">140.000.000 Mana per BUSD</p>
-            </div>
-            {state.account ? (
-              <button
-                onClick={buyLovePot}
-                className="w-full py-2 mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button lg:py-4 sm:text-2xl lg:text-3xl"
+          {/* Gradient Sector */}
+          <div className="sector-radial1 flex flex-col items-center justify-center">
+            <div className="container flex flex-col items-center justify-center">
+            {/* Main price */}
+            <h4 className="text-2xl text-white md:text-3xl lg:text-4xl gray-600">
+              Buy Mana
+            </h4>
+            <p className="mt-4 text-xs text-white sm:text-base lg:text-lg">
+              MIN: ~0.05 BNB / MAX: ~5 BNB
+              <br/>1 MANA = 1 BUSD
+            </p>
+            
+            {/* attention */}
+            <div className="px-2">
+              <div
+                style={{ backgroundColor: "#1e134b" }}
+                className="flex flex-col items-center px-4 py-2 mt-8 rounded-full sm:flex-row shadow-css1 md:py-2 sm:space-x-2"
               >
-                Buy Now
-              </button>
-            ) : (
-              <button onClick={!state.account ? state.connectMetaMask : undefined} className="w-full py-2 mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button lg:py-4 sm:text-2xl lg:text-3xl">
-                Connect to Wallet
-              </button>
-            )}
+                <div className="flex items-center space-x-2">
+                  <p
+                    className="text-base italic font-black lg:text-lg"
+                    style={{ color: "rgb(116, 63, 229)" }}
+                  >
+                    Attention:{" "}
+                  </p>
+                </div>
+                <p className="text-sm italic font-black text-white md:text-base">
+                  ICO Price 140.000.000 BUSD, Pancakeswap Listing Price 70.000.000 BUSD
+                </p>
+              </div>
+            </div>
+
+            {/* Swap Box */}
+            <div className="flex flex-col items-center justify-center w-11/12 p-4 mt-6 md:mt-12 lg:w-5/12 border-rounded-table rounded-3xl content-area md:p-6 shadow-css">
+              <div className="flex items-center justify-between w-full">
+                <h2 className="text-xl font-bold text-white md:text-2xl">Swap</h2>
+                <div>
+                  <img src="https://pre.shibnet.com/img/setting.svg" alt="" />
+                </div>
+              </div>
+              <div
+                style={{ backgroundColor: "#fff" }}
+                className="flex justify-between w-full px-2 pt-4 pb-2 mt-4 md:mt-6 md:pt-6 md:px-4 md:pb-4 rounded-2xl md:rounded-3xl shadow-css1 "
+              >
+                <div className="flex flex-col justify-start space-y-4 md:space-y-8">
+                  <p
+                    style={{ color: "#392c6e" }}
+                    className="text-lg text-left text-gray-600"
+                  >
+                    <strong>From</strong>
+                  </p>
+                  <input
+                    id="valid-amount"
+                    type="text"
+                    type="number"
+                    placeholder="0"
+                    className="w-40 text-3xl text-white bg-transparent focus:outline-none"
+                    value={swapFrom}
+                    //  type="number"
+                    onChange={(e) => checkValue(e.target.value)}
+                  />
+                </div>
+                <div className="relative flex flex-col justify-end">
+                  <button
+                    //   onClick={toggleList}
+                    className="flex items-center px-1 py-2 space-x-4 rounded-lg content-area-button2 md:py-3 md:px-2"
+                  >
+                    <div>
+                      <img src="https://pre.shibnet.com/img/bnb.svg" alt="" />
+                    </div>
+                    <p
+                      id="currency-value"
+                      className="text-base text-white md:text-xl"
+                    >
+                      BNB
+                    </p>
+                    <div>
+                      <img
+                        src="https://pre.shibnet.com/img/down.svg"
+                        alt=""
+                      />
+                    </div>
+                  </button>
+
+                  {/* <div
+                    id="curr-menu"
+                    className="absolute z-10 flex flex-col hidden w-11/12 pt-1 pb-1 bg-gray-900 rounded -bottom-28"
+                  >
+                    <button
+                      onClick={setToOption1}
+                      className="px-2 pb-3 text-base text-left text-red-500 border-b border-gray-300 md:text-xl hover:bg-gray-800"
+                    >
+                      BUSD
+                    </button>
+                    
+                    <button
+                      onClick={setToOption2}
+                      className="px-2 pb-3 text-base text-left text-red-500 border-b border-gray-300 md:text-xl hover:bg-gray-800"
+                    >
+                      BNB
+                    </button>
+                  </div> */}
+                </div>
+              </div>
+
+              <div className="mt-4 md:mt-8">
+                <img src="https://pre.shibnet.com/img/Arrow2.svg" alt="" />
+              </div>
+              <div
+                style={{ backgroundColor: "#fff" }}
+                className="flex justify-between w-full px-4 pt-6 pb-4 mt-4 bg-gray-900 shadow-2xl md:mt-8 rounded-3xl shadow-css1"
+              >
+                <div className="flex flex-col justify-start space-y-4 md:space-y-8">
+                  <p
+                    style={{ color: "#392c6e" }}
+                    className="text-lg text-left text-gray-600"
+                  >
+                    <strong>To</strong>
+                  </p>
+                  <input
+                    type="text"
+                    value={swapTo}
+                    style={{ width: 175 }}
+                    className="w-10 text-3xl text-white bg-transparent focus:outline-none"
+                  />
+                </div>
+                <div className="relative flex flex-col justify-end">
+                  <button className="flex items-center w-full px-2 py-2 space-x-8 rounded-lg content-area-button2 md:py-3 md:px-8">
+                    <p id="currency-value" className="text-xl text-white">
+                    Mana
+                    </p>
+                  </button>
+                </div>
+              </div>
+              <div className="flex items-center justify-between w-full px-4 mt-4">
+                <p className="text-white">Price</p>
+                <p className="font-medium text-white">140.000.000 Mana per BUSD</p>
+              </div>
+              {state.account ? (
+                <button
+                  onClick={buyLovePot}
+                  className="w-full py-2 mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button lg:py-4 sm:text-2xl lg:text-3xl"
+                >
+                  Buy Now
+                </button>
+              ) : (
+                <button onClick={!state.account ? state.connectMetaMask : undefined} className="w-full py-2 mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button lg:py-4 sm:text-2xl lg:text-3xl">
+                  Connect to Wallet
+                </button>
+              )}
+            </div>
+            </div>
           </div>
+          
+
+
+          {/* New Comment */}
           <div className="flex justify-center mt-7 md:mt-14">
             <p className="w-11/12 text-lg text-center text-white md:w-7/12">
               For every purchase that your referral makes, you will receive an

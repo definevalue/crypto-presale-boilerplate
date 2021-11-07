@@ -42,8 +42,16 @@ Konstantin Work
   background: radial-gradient(circle at top, #590a7e, #0e0516 45%);
 }
 
+/**Transparent Input**/
 .input-none{
   background: none;
+}
+
+/****/
+.sector-radial1{
+  padding-top: 70px;
+  padding-bottom: 75px;
+  background: radial-gradient(circle at bottom left, #641b87, #160722 32%);
 }
 
 /**End**/
