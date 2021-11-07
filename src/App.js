@@ -1,7 +1,6 @@
 import { useState, useLayoutEffect, useEffect } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import Web3 from "web3";
 import { loveAirDrop, PreSale } from "./contract/environment";
@@ -13,7 +12,7 @@ import { token } from './contract/environment'
 import "./App.css";
 const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 
-
+//bootstrap
 
 
 
@@ -452,7 +451,7 @@ function App() {
                 target="_blank"
                 className="text-white"
               >
-                <i class="fa fa-telegram" aria-hidden="true"></i>
+                <i className="fa fa-telegram" aria-hidden="true"></i>
                 &nbsp;&nbsp;&nbsp;
                 Join Telegram
               </a>
@@ -499,9 +498,9 @@ function App() {
             </div>
 
             {/* Swap Box */}
-            <div className="flex flex-col items-center justify-center w-11/12 p-4 mt-6 md:mt-12 lg:w-5/12 border-rounded-table rounded-3xl content-area md:p-6 shadow-css">
-              <div className="flex items-center justify-between w-full">
-                <h2 className="text-xl font-bold text-white md:text-2xl">Swap</h2>
+            <div className="box-swap flex flex-col items-center justify-center w-9/12 p-4 mt-6 md:mt-12 md:w-6/12 lg:w-6/12 xl:w-4/12 border-rounded-table rounded-3xl content-area1 md:p-6 shadow-css">
+              <div className="flex items-center justify-between w-full ">
+                <h2 className="text-xl font-bold text-white md:text-2xl border-bottom-custom">Swap</h2>
                 <div>
                   <img src="https://pre.shibnet.com/img/setting.svg" alt="" />
                 </div>
@@ -602,12 +601,12 @@ function App() {
               </div>
               <div className="flex items-center justify-between w-full px-4 mt-4">
                 <p className="text-white">Price</p>
-                <p className="font-medium text-white">140.000.000 Mana per BUSD</p>
+                <p className="font-medium text-white">1 MANA PER BUSD</p>
               </div>
               {state.account ? (
                 <button
                   onClick={buyLovePot}
-                  className="w-full py-2 mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button lg:py-4 sm:text-2xl lg:text-3xl"
+                  className="w-full mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button  sm:text-1xl lg:text-2xl"
                 >
                   Buy Now
                 </button>
@@ -623,7 +622,7 @@ function App() {
 
           {/* Section Black Start */}
           {/* New Comment */}
-          <div className="section_back pt-7 md:pt-14 pb-7 md:pb-14">
+          <div className="section_back  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
             <div className="flex justify-center ">
               <p className="w-11/12 text-lg text-center text-white md:w-7/12">
                 For every purchase that your referral makes, you will receive an
@@ -656,7 +655,7 @@ function App() {
               <p className="mt-4 text-sm text-center text-white sm:text-lg">
                 Claim your token now and start buying at the lowest market price.
               </p>
-              <p className="mt-4 text-3xl text-white sm:text-4xl">280.000.000 Mana</p>
+              <p className="mt-4 text-3xl text-white sm:text-4xl" style={{textAlign : "center"}}>280.000.000 Mana</p>
               {loadingClaimDrop ? (
                 <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
               ) : (
@@ -675,57 +674,80 @@ function App() {
           </div>
           {/* Section Black End */}
 
+          {/* Search Bar Start*/}
+          <div className="section-searchbar  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
+            <div className="flex flex-col items-center px-4 py-6 mt-8 border-t-2 border-b-2 border-white md:mt-14 lg:mt-24 md:px-10 md:py-10 lg:py-20 lg:w-8/12">
+              <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                Invite by
+              </h2>
+              <input
+                type="text"
+                className="input-none text-white w-11/12 px-4 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 focus:outline-none lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 sm:px-8 md:text-xl lg:text-2xl"
+                value={
+                  window.location.search
+                    ? window.location.search.split("?ref=")[1]
+                    : state.owner
+                }
+              />
+              <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
+                For referring another partner, you automatically receive 3% Mana
+              </p>
+            </div>
 
-          <div className="flex flex-col items-center px-4 py-6 mt-8 border-t-2 border-b-2 border-white md:mt-14 lg:mt-24 md:px-10 md:py-10 lg:py-20 lg:w-8/12">
-            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
-              Invite by
-            </h2>
-            <input
-              type="text"
-              className="input-none text-white w-11/12 px-4 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 focus:outline-none lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 sm:px-8 md:text-xl lg:text-2xl"
-              value={
-                window.location.search
-                  ? window.location.search.split("?ref=")[1]
-                  : state.owner
-              }
-            />
-            <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
-              For referring another partner, you automatically receive 3% Mana
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center w-full px-4 mt-8 sm:mt-14 lg:mt-24 lg:w-8/12 md:px-10">
-            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
-              My referral link
-            </h2>
-            <input
-              type="text"
-              className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
-              value={state.account ? state.account : "Connect Your Wallet"}
-            />
-            <CopyToClipboard
-              text={window.location.origin + "/?ref=" + state.account}
-              onCopy={() => toast.success("Copied!")}
-            >
-              <button
-                //   onClick={CopyLink}
-                className="px-8 py-2 mt-6 text-white uppercase rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
+            <div className="flex flex-col items-center w-full px-4 mt-8 sm:mt-14 lg:mt-24 lg:w-8/12 md:px-10">
+              <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                My referral link
+              </h2>
+              <input
+                type="text"
+                className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
+                value={state.account ? state.account : "Connect Your Wallet"}
+              />
+              <CopyToClipboard
+                text={window.location.origin + "/?ref=" + state.account}
+                onCopy={() => toast.success("Copied!")}
               >
-                Copy My referral Link
-              </button>
-            </CopyToClipboard>
-          </div><br/><br/>
-          <h3><strong>Disclaimer:</strong></h3>
-          <p className="text-sm italic text-white">
-          The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+                <button
+                  //   onClick={CopyLink}
+                  className="px-8 py-2 mt-6 text-white uppercase rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
+                >
+                  Copy My referral Link
+                </button>
+              </CopyToClipboard>
+            </div>
+          </div>
+          {/* Search Bar End*/}
+          
+          {/* Disclaim Start */}
+          <div className="section_disclaim flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
+            <h3 className="text-white"><strong>Disclaimer</strong></h3>
+            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+              What would you like to know?
+            </h2>
+            <div className="row">
+              <div className="col-12 col-sm-4 col-md-4 m-4 text-white">
+              The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+              </div>
+              <div className="col-12 col-sm-4 col-md-4 m-4 text-white">
+              By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+              Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.
+              </div>
+              <div className="col-12 col-sm-4 col-md-4 m-4 text-white">
+              All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
+              </div>
+            </div>
+            {/* <p className="text-sm italic text-white">
+            The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+              </p><br/>
+              <p className="text-sm italic text-white">
+              By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+  Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.
             </p><br/>
-            <p className="text-sm italic text-white">
-            By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
-Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.         
-           </p><br/>
-            <p className="text-sm italic text-white">
-            All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
-            </p>
+              <p className="text-sm italic text-white">
+              All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
+              </p> */}
+            </div>
+          {/* Disclaim End */}
         </div>
       </div>
       <div className="flex items-center justify-center w-full py-8 space-x-10 content-area">

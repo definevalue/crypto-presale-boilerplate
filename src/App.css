@@ -60,9 +60,23 @@ Konstantin Work
   background: radial-gradient(circle at bottom left, #641b87, #160722 15%);
 }
 
+.box-swap{
+  border: 1px solid #d7a618;
+  background: none;
+}
 
+.border-bottom-custom{
+  border-bottom: 2px solid #d7a618;
+  /* text-decoration: underline #d7a618; */
+}
 
+.section_disclaim{
+  background: none;
+}
 
+.section-searchbar{
+  background: none;
+}
 
 
 
