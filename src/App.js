@@ -225,8 +225,8 @@ function App() {
               onClick={!state.account ? state.connectMetaMask : undefined}
               className="flex items-center justify-between w-full px-2 py-2 modal-button1 md:px-4 md:py-4"
             >
-              <div className="grid grid-cols-2">
-                <div>
+              <div className="flex" style={{paddingLeft : '22%'}}>
+                <div className="pr-2">
                   <img src={metamask} alt="" style={{width : '30px'}}/>
                 </div>
                 <div>
@@ -241,8 +241,8 @@ function App() {
             onClick={!state.account ? state.connectMetaMask : undefined}
             className="modal-button1 flex items-center justify-between w-full px-2 py-2 mt-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
           >
-            <div className="grid grid-cols-2">
-                <div>
+            <div className="flex" style={{paddingLeft : '20%'}}>
+                <div className="pr-2">
                   <img src={trustwallet} style={{width : '30px'}}/>
                 </div>
                 <div>
@@ -258,8 +258,8 @@ function App() {
             onClick={!state.account ? state.connectMetaMask : undefined}
             className="modal-button1 flex items-center justify-between w-full px-2 py-2 mt-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
           >
-            <div className="grid grid-cols-2">
-              <div>
+            <div className="flex" style={{paddingLeft : '27%'}}>
+              <div className="pr-2">
                 <img src={safepal} style={{width : '30px'}}/>
               </div>
               <div>
