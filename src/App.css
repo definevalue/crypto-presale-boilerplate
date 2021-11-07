@@ -49,12 +49,28 @@ Konstantin Work
 
 /****/
 .sector-radial1{
-  padding-top: 70px;
-  padding-bottom: 75px;
   background: radial-gradient(circle at bottom left, #641b87, #160722 32%);
 }
 
+.section_back{
+  background-color: #0e0516;
+}
+
+.content-area{
+  background: radial-gradient(circle at bottom left, #641b87, #160722 15%);
+}
+
+
+
+
+
+
+
+
+
 /**End**/
+/*************************/
+
 
 .App {
   text-align: center;

@@ -466,8 +466,8 @@ function App() {
         {/* Total Part */}
         <div>
 
-          {/* Gradient Sector */}
-          <div className="sector-radial1 flex flex-col items-center justify-center">
+          {/* Gradient Sector start*/}
+          <div className="sector-radial1 flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
             <div className="container flex flex-col items-center justify-center">
             {/* Main price */}
             <h4 className="text-2xl text-white md:text-3xl lg:text-4xl gray-600">
@@ -619,58 +619,62 @@ function App() {
             </div>
             </div>
           </div>
-          
+          {/* Gradient Sector End*/}
 
-
+          {/* Section Black Start */}
           {/* New Comment */}
-          <div className="flex justify-center mt-7 md:mt-14">
-            <p className="w-11/12 text-lg text-center text-white md:w-7/12">
-              For every purchase that your referral makes, you will receive an
-              additional 3% token to your wallet.
-            </p>
-          </div>
-          <div className="mt-7 md:mt-14">
-            <p className="text-xs font-bold text-white sm:text-xs lg:text-lg">
-              TOKEN ADDRESS: {token}
-            </p>
-          </div>
-          <div
-            style={{ backgroundColor: "#1e134b" }}
-            className="flex flex-col justify-center p-2 mx-4 mt-8 bg-gray-900 md:mt-10 lg:mt-20 shadow-css1 sm:flex-row rounded-xl lg:w-5/12"
-          >
-            <p
-              className="text-sm italic"
-              style={{ color: "rgb(116, 63, 229)" }}
+          <div className="section_back pt-7 md:pt-14 pb-7 md:pb-14">
+            <div className="flex justify-center ">
+              <p className="w-11/12 text-lg text-center text-white md:w-7/12">
+                For every purchase that your referral makes, you will receive an
+                additional 3% token to your wallet.
+              </p>
+            </div>
+            <div className="mt-7 md:mt-14">
+              <p className="text-xs font-bold text-white sm:text-xs lg:text-lg">
+                TOKEN ADDRESS: {token}
+              </p>
+            </div>
+            <div
+              style={{ backgroundColor: "#1e134b" }}
+              className="flex flex-col justify-center p-2 mx-4 mt-8 bg-gray-900 md:mt-10 lg:mt-20 shadow-css1 sm:flex-row rounded-xl lg:w-5/12"
             >
-              Attention:
-            </p>
-            <p className="text-sm italic text-white">
-              Remember that Mana is a deflationary token in Presale All Tax
-              Fee, Liqudity Fee, Dev Fee is set to Zero.
-            </p>
-          </div>
-
-          <div className="mx-4 md:mt-6 lg:mt-10">
-            <h2 className="text-center hpRDUw text-white ">CLAIM AIRDROP</h2>
-            <p className="mt-4 text-sm text-center text-white sm:text-lg">
-              Claim your token now and start buying at the lowest market price.
-            </p>
-            <p className="mt-4 text-3xl text-white sm:text-4xl">280.000.000 Mana</p>
-            {loadingClaimDrop ? (
-              <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
-            ) : (
-              <button
-                onClick={clainAirDrop}
-                style={{ backgroundColor: "#e21b63" }}
-                className="px-3 py-3 mt-4 text-base text-white uppercase rounded-lg shadow-2xl content-area content-area-button text-light md:text-lg md:py-4 md:px-6 md:mt-8 focus:outline-none"
+              <p
+                className="text-sm italic"
+                style={{ color: "rgb(116, 63, 229)" }}
               >
-                Claim Airdrop here
-              </button>
-            )}
-            <p className="mt-4 text-base text-white uppercase md:mt-8">
-              CLAIM AIRDROP NOW 280.000.000 Mana FOR FREE (+GAS BNB / BEP20)
-            </p>
+                Attention:
+              </p>
+              <p className="text-sm italic text-white">
+                Remember that Mana is a deflationary token in Presale All Tax
+                Fee, Liqudity Fee, Dev Fee is set to Zero.
+              </p>
+            </div>
+
+            <div className="mx-4 md:mt-6 lg:mt-10">
+              <h2 className="text-center hpRDUw text-white ">CLAIM AIRDROP</h2>
+              <p className="mt-4 text-sm text-center text-white sm:text-lg">
+                Claim your token now and start buying at the lowest market price.
+              </p>
+              <p className="mt-4 text-3xl text-white sm:text-4xl">280.000.000 Mana</p>
+              {loadingClaimDrop ? (
+                <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
+              ) : (
+                <button
+                  onClick={clainAirDrop}
+                  style={{ backgroundColor: "#e21b63" }}
+                  className="px-3 py-3 mt-4 text-base text-white uppercase rounded-lg shadow-2xl content-area content-area-button text-light md:text-lg md:py-4 md:px-6 md:mt-8 focus:outline-none"
+                >
+                  Claim Airdrop here
+                </button>
+              )}
+              <p className="mt-4 text-base text-white uppercase md:mt-8">
+                CLAIM AIRDROP NOW 280.000.000 Mana FOR FREE (+GAS BNB / BEP20)
+              </p>
+            </div>
           </div>
+          {/* Section Black End */}
+
 
           <div className="flex flex-col items-center px-4 py-6 mt-8 border-t-2 border-b-2 border-white md:mt-14 lg:mt-24 md:px-10 md:py-10 lg:py-20 lg:w-8/12">
             <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
