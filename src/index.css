@@ -20,7 +20,7 @@ code {
 }
 
 .content-area{
-  background-color: #e7faff;
+  background-color: #4d237a;
 }
 .content-area-button{
   background-image: linear-gradient(to right, #ffa550 10%, #ff0000 100%)!important;
@@ -191,7 +191,7 @@ code {
   --tw-bg-opacity: 0.01;
 }
 .border-rounded-table{
-  border: 5px solid  #e84444
+  border: 3px solid  #8900fe
 }
 
 .rounded-lg {

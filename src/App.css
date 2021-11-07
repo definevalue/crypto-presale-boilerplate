@@ -32,6 +32,12 @@ Konstantin Work
 .main_back{
   background-color: #211034;
 }
+
+/*title*/
+.title{
+  font-size: 46px;
+  font-weight: 600;
+}
 /**End**/
 
 .App {
