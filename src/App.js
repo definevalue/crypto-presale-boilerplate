@@ -661,7 +661,6 @@ function App() {
               ) : (
                 <button
                   onClick={clainAirDrop}
-                  style={{ backgroundColor: "#e21b63" }}
                   className="px-3 py-3 mt-4 text-base text-white uppercase rounded-lg shadow-2xl content-area content-area-button text-light md:text-lg md:py-4 md:px-6 md:mt-8 focus:outline-none"
                 >
                   Claim Airdrop here
@@ -676,7 +675,7 @@ function App() {
 
           {/* Search Bar Start*/}
           <div className="section-searchbar  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
-            <div className="flex flex-col items-center px-4 py-6 mt-8 border-t-2 border-b-2 border-white md:mt-14 lg:mt-24 md:px-10 md:py-10 lg:py-20 lg:w-8/12">
+            <div className="flex flex-col items-center lg:w-8/12">
               <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
                 Invite by
               </h2>
@@ -721,21 +720,24 @@ function App() {
           {/* Disclaim Start */}
           <div className="section_disclaim flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
             <h3 className="text-white"><strong>Disclaimer</strong></h3>
-            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl pb-14">
               What would you like to know?
             </h2>
-            <div className="row">
-              <div className="col-12 col-sm-4 col-md-4 m-4 text-white">
-              The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+              <div className="container">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="text-white">
+                  The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+                  </div>
+                  <div className="text-white">
+                  By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+                  Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.
+                  </div>
+                  <div className="text-white">
+                  All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
+                  </div>
+                </div>
+                
               </div>
-              <div className="col-12 col-sm-4 col-md-4 m-4 text-white">
-              By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
-              Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.
-              </div>
-              <div className="col-12 col-sm-4 col-md-4 m-4 text-white">
-              All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
-              </div>
-            </div>
             {/* <p className="text-sm italic text-white">
             The information provided on Mana website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Mana team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
               </p><br/>
