@@ -75,7 +75,8 @@ Konstantin Work
 }
 
 .section-searchbar{
-  background: none;
+  background-image:  url('./asset/image/mainbg.png');
+  /* background: none; */
 }
 
 

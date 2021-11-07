@@ -15,6 +15,8 @@ import "./App.css";
 import metamask from './asset/image/metamask.png';
 import trustwallet from './asset/image/trustwallet.png';
 import safepal from './asset/image/safepal.png';
+import mainbg from './asset/image/mainbg.png';
+
 
 const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 
