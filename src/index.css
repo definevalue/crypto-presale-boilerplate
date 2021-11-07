@@ -129,21 +129,22 @@ code {
     /* background: radial-gradient(circle at top, #590a7e, #0e0516 45%); */
     /* border: double 5px transparent; */
     border-radius: 35px;
-    background-color: #353444;
+    /* background-color: #353444; */
+    background-color: #1d1c2e;
     /* background-origin: border-box; */
     /* background-clip: padding-box, border-box; */
 }
 
 .modal-button1{
     border: 2px solid #808080;
-    background-color: #353444;
+    background-color: #1d1c2e;
     border-radius: 15px;
     background-origin: border-box;
     background-clip: padding-box, border-box; 
 }
 
 .modal-button1:hover{
-  background-color: #2b2936;
+  background-color: #16141f;
 }
 
 .border-4{

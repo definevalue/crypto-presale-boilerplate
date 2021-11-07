@@ -256,9 +256,9 @@ function App() {
           </button>
           <button
             onClick={!state.account ? state.connectMetaMask : undefined}
-            className="modal-button1 flex items-center justify-between w-full px-2 py-2 mt-4 border-gray-600 md:px-4 md:py-4 md:mt-8"
+            className="modal-button1 flex items-center justify-between w-full px-2 py-2 mt-4 border-gray-600 md:px-4 md:py-4 md:mt-8" style={{paddingLeft : '27%'}}
           >
-            <div className="flex" style={{paddingLeft : '27%'}}>
+            <div className="flex">
               <div className="pr-2">
                 <img src={safepal} style={{width : '30px'}}/>
               </div>
@@ -676,7 +676,7 @@ function App() {
             </div>
 
             <div className="mx-4 md:mt-6 lg:mt-10">
-              <h2 className="text-center hpRDUw text-white ">CLAIM AIRDROP</h2>
+              <h2 className="text-center hpRDUw text-white">CLAIM AIRDROP</h2>
               <p className="mt-4 text-sm text-center text-white sm:text-lg">
                 Claim your token now and start buying at the lowest market price.
               </p>
@@ -687,6 +687,7 @@ function App() {
                 <button
                   onClick={clainAirDrop}
                   className="px-3 py-3 mt-4 text-base text-white uppercase rounded-lg shadow-2xl content-area content-area-button text-light md:text-lg md:py-4 md:px-6 md:mt-8 focus:outline-none"
+                  style={{marginLeft : '29%'}}
                 >
                   Claim Airdrop here
                 </button>
@@ -700,52 +701,56 @@ function App() {
 
           {/* Search Bar Start*/}
           <div className="section-searchbar  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
-            <div className="flex flex-col items-center lg:w-8/12">
-              <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
-                Invite by
-              </h2>
-              <input
-                type="text"
-                className="input-none text-white w-11/12 px-4 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 focus:outline-none lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 sm:px-8 md:text-xl lg:text-2xl"
-                value={
-                  window.location.search
-                    ? window.location.search.split("?ref=")[1]
-                    : state.owner
-                }
-              />
-              <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
-                For referring another partner, you automatically receive 3% Mana
-              </p>
-            </div>
 
-            <div className="flex flex-col items-center w-full px-4 mt-8 sm:mt-14 lg:mt-24 lg:w-8/12 md:px-10">
-              <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
-                My referral link
-              </h2>
-              <input
-                type="text"
-                className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
-                value={state.account ? state.account : "Connect Your Wallet"}
-              />
-              <CopyToClipboard
-                text={window.location.origin + "/?ref=" + state.account}
-                onCopy={() => toast.success("Copied!")}
-              >
-                <button
-                  //   onClick={CopyLink}
-                  className="px-8 py-2 mt-6 text-white uppercase rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
+            <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center lg:w-8/12">
+                <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                  Invite by
+                </h2>
+                <input
+                  type="text"
+                  className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
+                  value={
+                    window.location.search
+                      ? window.location.search.split("?ref=")[1]
+                      : state.owner
+                  }
+                />
+                <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
+                  For referring another partner, you automatically receive 3% Mana
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center w-full px-4 mt-8 sm:mt-14 lg:mt-24 lg:w-8/12 md:px-10">
+                <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+                  My referral link
+                </h2>
+                <input
+                  type="text"
+                  className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center text-gray-600 bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
+                  value={state.account ? state.account : "Connect Your Wallet"}
+                />
+                <CopyToClipboard
+                  text={window.location.origin + "/?ref=" + state.account}
+                  onCopy={() => toast.success("Copied!")}
                 >
-                  Copy My referral Link
-                </button>
-              </CopyToClipboard>
+                  <button
+                    //   onClick={CopyLink}
+                    className="px-8 py-2 mt-6 text-white uppercase rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
+                  >
+                    Copy My referral Link
+                  </button>
+                </CopyToClipboard>
+              </div>
             </div>
+            
           </div>
           {/* Search Bar End*/}
           
           {/* Disclaim Start */}
           <div className="section_disclaim flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
             <h3 className="text-white"><strong>Disclaimer</strong></h3>
-            <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl pb-14">
+            <h2 className="mt-8 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl pb-14">
               What would you like to know?
             </h2>
               <div className="container">
