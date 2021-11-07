@@ -682,7 +682,7 @@ function App() {
               <p className="mt-4 text-sm text-center text-white sm:text-lg">
                 Claim your token now and start buying at the lowest market price.
               </p>
-              <p className="mt-4 text-3xl text-white sm:text-4xl" style={{textAlign : "center"}}>280.000.000 Mana</p>
+              <p className="mt-4 text-3xl text-white sm:text-4xl" style={{textAlign : "center"}}>5 Mana</p>
               {loadingClaimDrop ? (
                 <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
               ) : (
