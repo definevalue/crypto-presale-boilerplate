@@ -252,12 +252,12 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="relative pb-4 sm:pb-8 lg:pb-16">
-        <img
+      <div className="relative pb-4 sm:pb-8 lg:pb-16 navbar">
+        {/* <img
           src="https://pre.shibnet.com/home1-shibnet.jpg"
           alt=""
           className="absolute inset-0 object-fill object-center bg-image"
-        />
+        /> */}
         <div className="container relative z-10 mx-auto xl:px-20">
           <div className="relative flex items-center justify-between p-4 bg-gray-50 bg-opacity-5">
             <div
@@ -441,7 +441,7 @@ function App() {
           <div className="flex flex-col items-center px-4 md:px-6 lg:px-10 ">
             <div className="flex flex-col justify-center  items-center mt-1 sm:mt-4 md:mt-12 lg:mt-20 ">
               <h1 className="text-xl font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
-              #1 Real Social Network
+              The World' Best Real Social Network
               </h1>
               <h1 className="text-xl items-center font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
               Cryptocurrency
@@ -452,6 +452,8 @@ function App() {
                 target="_blank"
                 className="text-white"
               >
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                &nbsp;&nbsp;&nbsp;
                 Join Telegram
               </a>
               </button>

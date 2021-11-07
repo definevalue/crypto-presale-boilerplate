@@ -2,7 +2,7 @@
 Konstantin Work
 ****/
 /**Start**/
-.navbar{
+/* .navbar{
   background-color: #170b2a;
   position: fixed;
   left: 0;
@@ -11,7 +11,7 @@ Konstantin Work
   height: 110px;
   z-index: 100;
   padding : 20px;
-}
+} */
 /* logo image */
 .logo{
   width: 700px;
@@ -35,8 +35,11 @@ Konstantin Work
 
 /*title*/
 .title{
-  font-size: 46px;
-  font-weight: 600;
+  
+}
+
+.navbar{
+  background: radial-gradient(circle at top, #590a7e, #0e0516 45%);
 }
 /**End**/
 

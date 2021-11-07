@@ -23,12 +23,12 @@ code {
   background-color: #4d237a;
 }
 .content-area-button{
-  background-image: linear-gradient(to right, #ffa550 10%, #ff0000 100%)!important;
+  background-image: linear-gradient(to bottom, #a845f3 10%, #441852 100%)!important;
   color:white!important;
   }
 
   .content-area-button:hover{
-    background-image: linear-gradient(to right, #ff0000 10%, #ffa550 100%)!important;}
+    background-image: linear-gradient(to top, #7030a1 10%, #752b8b 100%)!important;}
 
     .content-area-button2{
       background-image: linear-gradient(to right, #3840f7 10%, #53d8ff 100%)!important;
