@@ -315,7 +315,7 @@ function App() {
                 </li>
               </ul>
               <div className="flex flex-col mt-8 space-y-8">
-                <button className="px-3 py-1 text-white bg-transparent content-area-button2 rounded-full bnb-border">
+                <button className="px-3 py-1 text-white bg-transparent content-area-button2 rounded-full">
                   BNB
                 </button>
                 <button className="px-3 py-1 text-white bg-transparent rounded-full content-area-button button-md-bg">
@@ -709,8 +709,8 @@ Please note there are always risks associated with smart-contracts. Please use a
         </div>
       </div>
       <div className="flex items-center justify-center w-full py-8 space-x-10 content-area">
-        <a href="https://manapool.finance/" target="_blank" className="text-white hover:underline">
-        © 2021 - Mana
+        <a href="https://manapool.finance/" target="_blank" className="text-white hover:underline h6">
+        Copyright © 2021 Mana Magic. All rights reserved.
         </a>
       </div>
     </div>
