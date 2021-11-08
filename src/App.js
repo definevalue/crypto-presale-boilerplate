@@ -694,7 +694,7 @@ function App() {
                   Claim Airdrop here
                 </button>
               )}
-              <p className="mt-4 text-base text-white uppercase md:mt-8">
+              <p className="text-center mt-4 text-base text-white uppercase md:mt-8">
                 CLAIM AIRDROP NOW 280.000.000 Mana FOR FREE (+GAS BNB / BEP20)
               </p>
             </div>
@@ -729,7 +729,7 @@ function App() {
                 </h2>
                 <input
                   type="text"
-                  className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
+                  className="input-none text-white w-10/12 px-8 py-2 mt-3 text-base text-center bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
                   value={state.account ? state.account : "Connect Your Wallet"}
                 />
                 <CopyToClipboard
