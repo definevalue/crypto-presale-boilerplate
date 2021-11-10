@@ -664,8 +664,8 @@ function App() {
 
           {/* Section Black Start */}
           {/* New Comment */}
-          <div className="section_back  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
-            <div className="flex justify-center ">
+          <div className="section_back  flex flex-col items-center justify-center pt-5 md:pt-10 pb-5 md:pb-10">
+            {/* <div className="flex justify-center ">
               <p className="w-11/12 text-lg text-center text-white md:w-7/12">
                 For every purchase that your referral makes, you will receive an
                 additional 3% token to your wallet.
@@ -675,8 +675,8 @@ function App() {
               <p className="text-xs font-bold text-white sm:text-xs lg:text-lg">
                 TOKEN ADDRESS: {token}
               </p>
-            </div>
-            <div
+            </div> */}
+            {/* <div
               style={{ backgroundColor: "#1e134b" }}
               className="flex flex-col justify-center p-2 mx-4 mt-8 bg-gray-900 md:mt-10 lg:mt-20 shadow-css1 sm:flex-row rounded-xl lg:w-5/12"
             >
@@ -690,28 +690,35 @@ function App() {
                 Remember that Mana is a deflationary token in Presale All Tax
                 Fee, Liqudity Fee, Dev Fee is set to Zero.
               </p>
-            </div>
+            </div> */}
 
-            <div className="mx-4 md:mt-6 lg:mt-10">
-              <h2 className="text-center hpRDUw text-white">CLAIM AIRDROP</h2>
-              <p className="mt-4 text-sm text-center text-white sm:text-lg">
+            <div className="items-center" style={{ display : "contents"}}>
+              <h2 className="text-center text-yellow-400 sm:text-2xl text-1xl">CLAIM AIRDROP</h2>
+              <h3 className="mt-4 text-2xl sm:text-3xl text-center text-white">
+                Claim your token and Buy this
+              </h3>
+              <p className="mt-4 text-sm sm:text-lg text-center text-white ">
                 Claim your token now and start buying at the lowest market price.
+                <br />
+                Claim Airdrop Now 280.000.000 Mana For Free (+Gas BNB / bep20)
+                <br />
+                5 Mana
               </p>
-              <p className="mt-4 text-3xl text-white sm:text-4xl" style={{textAlign : "center"}}>5 Mana</p>
+              {/* <p className="mt-4 text-3xl text-white sm:text-4xl text-center items-center" >5 Mana</p> */}
               {loadingClaimDrop ? (
                 <ClipLoader color="green" loading={loadingClaimDrop} size={60} />
               ) : (
                 <button
                   onClick={clainAirDrop}
-                  className="px-3 py-3 mt-4 text-base text-white uppercase rounded-lg shadow-2xl content-area content-area-button text-light md:text-lg md:py-4 md:px-6 md:mt-8 focus:outline-none"
-                  style={{marginLeft : '29%'}}
+                  className="px-1 py-1 md:py-2 md:px-4 mt-4 text-base text-white uppercase rounded-lg shadow-2xl content-area content-area-button text-light md:text-lg md:mt-5 focus:outline-none"
+                  // style={{marginLeft : '29%'}}
                 >
                   Claim Airdrop here
                 </button>
               )}
-              <p className="text-center mt-4 text-base text-white uppercase md:mt-8">
+              {/* <p className="text-center mt-4 text-base text-white uppercase md:mt-8">
                 CLAIM AIRDROP NOW 280.000.000 Mana FOR FREE (+GAS BNB / BEP20)
-              </p>
+              </p> */}
             </div>
           </div>
           {/* Section Black End */}
@@ -720,6 +727,19 @@ function App() {
           <div className="section-searchbar  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
 
             <div className="flex flex-col items-center">
+              
+              <div className="flex justify-center ">
+                <p className="w-11/12 text-lg text-center text-white md:w-7/12">
+                  For every purchase that your referral makes, you will receive an
+                  additional 3% token to your wallet.
+                </p>
+              </div>
+              <div className="mt-7 md:mt-14">
+                <p className="text-xs font-bold text-white sm:text-xs lg:text-lg">
+                  TOKEN ADDRESS: {token}
+                </p>
+              </div>
+
               <div className="flex flex-col items-center lg:w-8/12">
                 <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
                   Invite by
@@ -777,7 +797,7 @@ function App() {
                   </div>
                   <div className="text-white">
                   By purchasing Mana, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
-                  Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes.
+                  {/* Please note there are always risks associated with smart-contracts. Please use at your own risk. Mana Token is not a registered broker, analyst or investment advisor. Everything that we provide on this site is purely for guidance, informational and educational purposes. */}
                   </div>
                   <div className="text-white">
                   All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose. When in doubt, you should consult a qualified financial advisor before making any investment decisions.
