@@ -693,7 +693,7 @@ function App() {
             </div> */}
 
             <div className="items-center" style={{ display : "contents"}}>
-              <h2 className="text-center text-yellow-400 sm:text-2xl text-1xl">CLAIM AIRDROP</h2>
+              <h2 className="text-center text-yellow-400 ">CLAIM AIRDROP</h2>
               <h3 className="mt-4 text-2xl sm:text-3xl text-center text-white">
                 Claim your token and Buy this
               </h3>
@@ -840,7 +840,7 @@ function App() {
           
           {/* Disclaim Start */}
           <div className="section_disclaim flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14 px-6">
-            <h3 className="text-white"><strong>Disclaimer</strong></h3>
+            <h2 className="text-yellow-400"><strong>Disclaimer</strong></h2>
             <h2 className="mt-8 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl pb-14">
               What would you like to know?
             </h2>
