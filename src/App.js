@@ -510,7 +510,7 @@ function App() {
             <h6 className="text-xs text-yellow-300 sm:text-base lg:text-lg text-center mb-2">
               Swap
             </h6>
-            <h4 className="text-2xl text-white md:text-3xl lg:text-4xl gray-600">
+            <h4 className="text-2xl text-white sm:text-3xl gray-600">
               Please Buy Mana
             </h4>
             <p className="mt-4 text-xs text-white sm:text-base lg:text-lg text-center">
@@ -726,25 +726,50 @@ function App() {
           {/* Search Bar Start*/}
           <div className="section-searchbar  flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
 
-            <div className="flex flex-col items-center">
-              
-              <div className="flex justify-center ">
+            <div className="rounded-2xl pt-16 pb-16 px-16" style={{backgroundColor: '#1a0c2a'}}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-12/12 text-white items-center mb-6">
+                <div>
+                  <h2 className="text-xl text-white sm:text-2xl md:text-3xl lg:text-4xl mb-4">
+                    Invite Friends and 
+                    <br/>
+                    Get Reward
+                  </h2>
+                  <p className="text-lg text-white">
+                    For every purchase that your referral makes,
+                    <br/>you will receive an additional 3% token to your wallet.
+                    <br/>Contract Address: 
+                    {token}
+                  </p>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    className="input-none text-white w:10/12 px-8 py-2 lg:py-4 md:text-xl lg:w-10/12 lg:text-2xl text-base text-center bg-gray-900 gradient-border shadow-css1"
+                    value={
+                      window.location.search
+                        ? window.location.search.split("?ref=")[1]
+                        : state.owner
+                    }
+                  />
+                </div>
+              </div>
+              {/* <div className="flex justify-center ">
                 <p className="w-11/12 text-lg text-center text-white md:w-7/12">
                   For every purchase that your referral makes, you will receive an
                   additional 3% token to your wallet.
                 </p>
-              </div>
-              <div className="mt-7 md:mt-14">
+              </div> */}
+              {/* <div className="mt-7 md:mt-14">
                 <p className="text-xs font-bold text-white sm:text-xs lg:text-lg">
                   TOKEN ADDRESS: {token}
                 </p>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col items-center lg:w-8/12">
-                <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+              {/* <div className="flex flex-col items-center lg:w-8/12"> */}
+                {/* <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
                   Invite by
-                </h2>
-                <input
+                </h2> */}
+                {/* <input
                   type="text"
                   className="input-none text-white w-11/12 px-8 py-2 mt-3 text-base text-center bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
                   value={
@@ -752,17 +777,46 @@ function App() {
                       ? window.location.search.split("?ref=")[1]
                       : state.owner
                   }
-                />
-                <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
+                /> */}
+                {/* <p className="mt-4 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl lg:w-11/12 md:mt-8">
                   For referring another partner, you automatically receive 3% Mana
-                </p>
+                </p> */}
+              {/* </div> */}
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-12/12 text-white items-center">
+                <div>
+                  <h2 className="text-xl text-white sm:text-2xl md:text-3xl lg:text-4xl mb-4">
+                    My referral link
+                  </h2><p className="text-lg text-white">
+                    Please Type your referral link
+                    <br/>For every purchase that your referral makes,
+                    <br/>you will receive an additional 3% token to your wallet.
+                  </p>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    className="input-none text-white w-10/12 px-8 py-2 text-base text-center bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
+                    value={state.account ? state.account : "Connect Your Wallet"}
+                  />
+                  <CopyToClipboard
+                    text={window.location.origin + "/?ref=" + state.account}
+                    onCopy={() => toast.success("Copied!")}
+                  >
+                    <button
+                      //   onClick={CopyLink}
+                      className="px-8 py-2 mt-6 text-white rounded-lg shadow-2xl lg:mt-12 content-area-button2 md:py-3 focus:outline-none content-area "
+                    >
+                      Copy My referral Link
+                    </button>
+                  </CopyToClipboard>
+                </div>
               </div>
-
-              <div className="flex flex-col items-center w-full px-4 mt-8 sm:mt-14 lg:mt-24 lg:w-8/12 md:px-10">
-                <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
+              <div className="flex flex-col items-center lg:w-8/12">
+                {/* <h2 className="text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
                   My referral link
-                </h2>
-                <input
+                </h2> */}
+                {/* <input
                   type="text"
                   className="input-none text-white w-10/12 px-8 py-2 mt-3 text-base text-center bg-gray-900 lg:w-10/12 lg:mt-6 gradient-border shadow-css1 lg:py-4 md:text-xl lg:text-2xl"
                   value={state.account ? state.account : "Connect Your Wallet"}
@@ -777,7 +831,7 @@ function App() {
                   >
                     Copy My referral Link
                   </button>
-                </CopyToClipboard>
+                </CopyToClipboard> */}
               </div>
             </div>
             
@@ -785,7 +839,7 @@ function App() {
           {/* Search Bar End*/}
           
           {/* Disclaim Start */}
-          <div className="section_disclaim flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
+          <div className="section_disclaim flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14 px-6">
             <h3 className="text-white"><strong>Disclaimer</strong></h3>
             <h2 className="mt-8 text-xl text-center text-white sm:text-2xl md:text-3xl lg:text-4xl pb-14">
               What would you like to know?
