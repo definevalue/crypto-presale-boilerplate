@@ -465,14 +465,25 @@ function App() {
             </div>
           </div>
           <div className="flex flex-col items-center px-4 md:px-6 lg:px-10 ">
-            <div className="flex flex-col justify-center  items-center mt-1 sm:mt-4 md:mt-12 lg:mt-20 ">
+            <div className="flex flex-col justify-center  items-center mt-1 sm:mt-4 md:mt-12 lg:mt-20 container">
               <h1 className="text-2xl font-medium leading-normal text-white sm:text-3xl md:text-4xl lg:text-5xl">
               The World' Best Real Social Network
               </h1>
-              <h1 className="text-xl items-center font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl">
+              <h1 className="text-xl items-center font-medium leading-normal text-white sm:text-2xl md:text-3xl lg:text-4xl mt-4 mb-6">
               Cryptocurrency
               </h1>
-              <button className="w-11/12 px-8 py-2 mt-8 text-white  items-center rounded-full bg-button-image content-area-button sm:w-8/12 md:w-8/12 lg:w-6/12">
+              <h3 className="text-white items-center text-center">
+              Mana Swap is your personal trading assistant.
+              He’s a local bot that runs cross-platform on your machine,
+              <br/>
+              giving you more control than any limit order system in the market. Automate your DEX
+              (Uniswap, Sushiswap, Pancakeswap)
+              <br/>
+              trades, snipe new listings for the best entry price, pre-approve tokens on purchase, and much
+              more!
+              </h3>
+
+              <button className="w-7/12 px-8 py-2 mt-8 text-white  items-center rounded-full bg-button-image content-area-button sm:w-5/12 md:w-5/12 lg:w-4/12">
               <a
                 href="https://t.me/shibnet"
                 target="_blank"
@@ -496,16 +507,20 @@ function App() {
           <div className="sector-radial1 flex flex-col items-center justify-center pt-7 md:pt-14 pb-7 md:pb-14">
             <div className="container flex flex-col items-center justify-center">
             {/* Main price */}
+            <h6 className="text-xs text-yellow-300 sm:text-base lg:text-lg text-center mb-2">
+              Swap
+            </h6>
             <h4 className="text-2xl text-white md:text-3xl lg:text-4xl gray-600">
-              Buy Mana
+              Please Buy Mana
             </h4>
             <p className="mt-4 text-xs text-white sm:text-base lg:text-lg text-center">
+              You can swap mana to bnb
               MIN: ~0.05 BNB / MAX: ~5 BNB
               <br/>1 MANA = 1 BUSD
             </p>
             
             {/* attention */}
-            <div className="px-2">
+            {/* <div className="px-2">
               <div
                 style={{ backgroundColor: "#1e134b" }}
                 className="flex flex-col items-center px-4 py-2 mt-8 rounded-full sm:flex-row shadow-css1 md:py-2 sm:space-x-2"
@@ -522,7 +537,7 @@ function App() {
                   ICO Price 140.000.000 BUSD, Pancakeswap Listing Price 70.000.000 BUSD
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Swap Box */}
             <div className="box-swap flex flex-col items-center justify-center w-9/12 p-4 mt-6 md:mt-12 md:w-6/12 lg:w-6/12 xl:w-4/12 border-rounded-table rounded-3xl content-area1 md:p-6 shadow-css">
@@ -548,7 +563,7 @@ function App() {
                     type="text"
                     type="number"
                     placeholder="0"
-                    className="w-40 text-3xl text-white bg-transparent focus:outline-none"
+                    className="w-40 text-3xl text-black bg-transparent focus:outline-none"
                     value={swapFrom}
                     //  type="number"
                     onChange={(e) => checkValue(e.target.value)}
@@ -615,7 +630,7 @@ function App() {
                     type="text"
                     value={swapTo}
                     style={{ width: 175 }}
-                    className="w-10 text-3xl text-white bg-transparent focus:outline-none"
+                    className="w-10 text-3xl text-black bg-transparent focus:outline-none"
                   />
                 </div>
                 <div className="relative flex flex-col justify-end">
@@ -633,7 +648,7 @@ function App() {
               {state.account ? (
                 <button
                   onClick={buyLovePot}
-                  className="w-full mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button  sm:text-1xl lg:text-2xl"
+                  className="w-full mt-6 text-xl text-white uppercase rounded-full shadow-inner md:mt-10 lg:mt-6 content-area-button  sm:text-1xl lg:text-2xl pt-1 pb-1"
                 >
                   Buy Now
                 </button>
