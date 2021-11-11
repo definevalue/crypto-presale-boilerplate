@@ -664,7 +664,7 @@ function App() {
 
           {/* Section Black Start */}
           {/* New Comment */}
-          <div className="section_back  flex flex-col items-center justify-center pt-5 md:pt-10 pb-5 md:pb-10">
+          <div className="section_back  flex flex-col items-center justify-center pt-5 md:pt-10 pb-5 md:pb-10 mx-6">
             {/* <div className="flex justify-center ">
               <p className="w-11/12 text-lg text-center text-white md:w-7/12">
                 For every purchase that your referral makes, you will receive an
